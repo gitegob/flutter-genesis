@@ -17,49 +17,15 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.indigo[800]),
       // ignore: prefer_const_constructors
-      body: Center(
-        //     child: Icon(
-        //   Icons.airport_shuttle,
-        //   color: Colors.blue[500],
-        //   size: 50,
-        // ),
-        // child: ElevatedButton(
-        //   onPressed: () {},
-        //   child: const Text("Get Started"),
-        // ),
-        // child: RaisedButton(
-        //   onPressed: () {},
-        //   child: const Text("Get Started"),
-        //   color: Colors.deepPurpleAccent,
-        //   textColor: Colors.white,
-        //   elevation: 10,
-        // ),
-        // child: FlatButton(
-        //   onPressed: () {
-        //     print("Button clicked");
-        //   },
-        //   child: const Text("Get Started"),
-        //   color: Colors.deepPurpleAccent,
-        //   textColor: Colors.white,
-        // ),
-        // child: TextButton(
-        //   onPressed: () {},
-        //   child: const Text("Get Started"),
-        // ),
-        // child: RaisedButton.icon(
-        //   onPressed: () {
-        //     print("Mail sent");
-        //   },
-        //   icon: const Icon(Icons.mail),
-        //   color: Colors.deepPurpleAccent,
-        //   textColor: Colors.white,
-        //   elevation: 10,
-        //   label: const Text("Send Email"),
-        // ),
-        child: IconButton(
-          onPressed: null,
-          icon: Icon(Icons.attach_email),
-        ),
+      // body: Container(
+      //   child: Text("Wazaa"),
+      //   color: Colors.grey[300],
+      //   padding: EdgeInsets.all(10),
+      //   margin: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+      // ),
+      body: Padding(
+        child: Text("Wazaa"),
+        padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
       ),
       floatingActionButton: FloatingActionButton(
           child: const Text("Click"),
