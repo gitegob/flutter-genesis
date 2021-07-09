@@ -16,16 +16,34 @@ class Home extends StatelessWidget {
           ),
           centerTitle: true,
           backgroundColor: Colors.indigo[800]),
-      // ignore: prefer_const_constructors
-      // body: Container(
-      //   child: Text("Wazaa"),
-      //   color: Colors.grey[300],
-      //   padding: EdgeInsets.all(10),
-      //   margin: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
-      // ),
-      body: Padding(
-        child: Text("Wazaa"),
-        padding: EdgeInsets.symmetric(vertical: 10,horizontal: 20),
+      body: Row(
+        children: [
+          Expanded(
+            flex: 3,
+            child: Image.asset('images/workstation.jpeg'),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.indigo[800],
+              child: Text('3'),
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
           child: const Text("Click"),
